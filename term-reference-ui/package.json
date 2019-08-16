@@ -6,6 +6,9 @@
     "@types/jest": "24.0.17",
     "@types/node": "12.7.2",
     "@types/react-dom": "16.8.5",
+    "husky": "^3.0.3",
+    "lint-staged": "^9.2.1",
+    "prettier": "^1.18.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
@@ -35,6 +38,17 @@
           "additional-typescript-only-rule": "warn"
         }
       }
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --single-quote --write",
+      "git add"
     ]
   },
   "browserslist": {
