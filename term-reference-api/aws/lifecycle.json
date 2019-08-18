@@ -1,0 +1,12 @@
+{
+    "Rules": [
+        {
+            "Expiration": {
+                "Days": 1
+            },
+            "Status": "Enabled",
+            "ID": "Delete1DayOld",
+            "Prefix": ""
+        }
+    ]
+}
