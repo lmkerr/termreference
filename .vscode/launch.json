@@ -10,6 +10,13 @@
       "sourceMapPathOverrides": {
         "webpack:///src/*": "${webRoot}/*"
       }
-    }
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Debug API",
+      "sourceMaps": true,
+      "port": 3030
+    }    
   ]
 }
