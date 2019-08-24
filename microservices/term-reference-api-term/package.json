@@ -1,9 +1,11 @@
 {
-  "name": "aws-rest-with-dynamodb",
+  "name": "term-reference-api-term",
   "version": "1.0.0",
   "description": "Serverless CRUD service exposing a REST HTTP interface",
-  "author": "",
-  "license": "MIT",
+  "author": "Loren M. Kerr @ Apportunities LLC",
+  "scripts": {
+    "deploy": "npm i && sls deploy -v"
+  },
   "dependencies": {
     "uuid": "^2.0.3"
   }
